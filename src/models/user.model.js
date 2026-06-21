@@ -38,6 +38,11 @@ const userSchema = new Schema(
                 ref: "Video"
             }
         ],
+        copyrightStrikes: {
+            type: Number,
+            default: 0,
+            select: false
+        },
         password: {
             type: String,
             required: [true, 'Password is required']
